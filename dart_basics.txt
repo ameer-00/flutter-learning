@@ -1,0 +1,121 @@
+Dart is : program language developed by google use for develope :  mobile app , web app , desktop app .
+Dart Type System Tree ================>
+Object_(root)_
+              | 
+              |__num__
+              |       |__int
+              |       |__double 
+              |
+              |
+              |__ bool 
+              |
+              |
+              |__String__
+              |          |__Runes
+              |
+              |
+              |__ List<T>
+              |
+              |
+              |__ Set<t>
+              |
+              |
+              |__ Map<k,v>                       
+              |
+              |
+              |__ Iterable<T>        
+              |
+              |
+              |__ Enum 
+              |
+              |
+              |__ Function
+              |
+              |
+              |__ Symbol
+              |
+              |
+              |__ Type
+              |
+              |
+              |__ Null
+              |
+              |
+              |__ dynamic
+              |
+              |
+              |__ Never
+
+
+
+
+Data type (Const type) ====>
+int , double , bool , String , list , set , map , Enum , Function , symbol , Null , runes ==> 
+int : integers number
+double : is a floating point numeric type that represents decimal number with double precision (64-bit) .
+bool: true or fauls .  
+String : representing a sequence of characters. 
+list (as a data type) : used tostore an ordered collection of values of the same type .
+set (as a data type) : represent an unordered collection of unipue values .
+map (as a data type) : associates keys with value . 
+Enum : fixed constant value . 
+Function: functions as object .
+symbol : symbol identifiers 
+Null : null value
+runes : Any numerical values ​​that represent letters and symbols (including emojis and special characters).
+
+
+Super type ====>
+Object,Iterable,num ==>
+object: root data type , can hold any value while still enforcing type through runtime checks and casting . 
+Iterable<T> : parent of (List , Set) . 
+num : parent of (int , double) . 
+
+
+Type inference & Dynamic Typing Keywords ====>
+var , dynamic ==>
+var : Dart automatically detects the type at the first value (type inference)
+dynamic : A special type that allows changing the typw at any time , Dart does not check the type during translation.
+
+Unicode & Text-Related type ====>
+String : UTF-16 text . 
+Runes : Unicode code points .
+
+
+
+special purpose Type ====>
+Never , Type ==>
+Never : indecates a value that never occurs .
+Type : represents a type at runtime . 
+
+
+** const :  When you know the value beforehand and want it to always be constant. (compile-time constant).
+** final : When you want a value that will not change after being set, but may depend on the runtime . (runtime constant).
+
+
+(Data structures / clooection types)
+set , list , map ==> 
+list  :   []  - changeable  - ordered  - allow duplicate 
+set :  {}  - unchangeable  - unordered  - no duplicate
+map  : {}  - unchangeable  - unordered   - no duplicate 
+• Ordered →
+  Elements in a collection (like List) have a specific order.
+  Each element has an index (0, 1, 2, ...).
+  Accessing index 0 returns the first element.
+
+• Unordered →
+  Elements have no fixed order.
+  Set does not care about position, only about unique values.
+  There is no index in Set.
+
+• Changeable (Mutable) →
+  You can add, remove, or modify elements after creating the collection.
+
+• Unchangeable (Immutable) →
+  You cannot add, remove, or modify elements after creating the collection.
+
+
+-------------------
+
+Librarys in dart ====> 
+import 'dart:io';
